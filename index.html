@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Development Plan 2026-2031</title>
+    <title>Detailed Career Plan 2026-2031</title>
     <style>
         :root {
-            --primary-color: #00d2ff;
-            --secondary-color: #3a7bd5;
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-color: #f8fafc;
+            --primary-color: #2d6a4f; 
+            --secondary-color: #74c69d;
+            --accent-color: #d8f3dc;
+            --bg-color: #f0f4f1;
+            --card-bg: #ffffff;
+            --text-color: #1b4332;
+            --timeline-line: #95d5b2;
         }
 
         body {
@@ -29,15 +31,16 @@
 
         header {
             text-align: center;
-            padding: 40px 0;
+            padding: 50px 0;
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            border-radius: 15px;
+            border-radius: 20px;
             margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 25px rgba(45, 106, 79, 0.2);
+            color: white;
         }
 
-        h1 { margin: 0; font-size: 2.5rem; }
-        .subtitle { font-size: 1.1rem; opacity: 0.9; }
+        h1 { margin: 0; font-size: 2.2rem; text-transform: uppercase; }
+        .subtitle { font-size: 1.2rem; margin-top: 10px; font-weight: 300; }
 
         .timeline {
             position: relative;
@@ -48,15 +51,15 @@
             content: '';
             position: absolute;
             left: 50%;
-            width: 2px;
+            width: 3px;
             height: 100%;
-            background: var(--secondary-color);
+            background: var(--timeline-line);
             transform: translateX(-50%);
         }
 
         .milestone {
             position: relative;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             width: 50%;
             padding: 0 40px;
             box-sizing: border-box;
@@ -67,40 +70,41 @@
 
         .content {
             background: var(--card-bg);
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            border-left: 4px solid var(--primary-color);
-            transition: transform 0.3s ease;
-        }
-
-        .milestone:nth-child(even) .content {
-            border-left: none;
-            border-right: 4px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--primary-color);
+            transition: all 0.3s ease;
         }
 
         .content:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(45, 106, 79, 0.15);
         }
 
         .year {
             display: inline-block;
-            background: var(--primary-color);
-            color: #000;
+            background: var(--accent-color);
+            color: var(--primary-color);
             padding: 5px 15px;
             border-radius: 20px;
             font-weight: bold;
             margin-bottom: 10px;
+            border: 1px solid var(--secondary-color);
         }
 
-        h3 { color: var(--primary-color); margin-top: 0; }
-        ul { list-style: none; padding: 0; }
-        li { margin-bottom: 10px; }
+        h3 { color: var(--primary-color); margin-top: 0; font-size: 1.3rem; }
+        ul { list-style: none; padding: 0; margin: 0; }
+        li { margin-bottom: 8px; }
+
+        .milestone:nth-child(even) li::before { content: '🌿'; margin-right: 8px; }
+        .milestone:nth-child(odd) li::after { content: '🌿'; margin-left: 8px; }
 
         @media (max-width: 768px) {
             .timeline::before { left: 20px; }
             .milestone { width: 100%; left: 0 !important; text-align: left !important; padding-left: 50px; }
-            .milestone:nth-child(even) .content { border-left: 4px solid var(--primary-color); border-right: none; }
+            .milestone li::after { content: none; }
+            .milestone li::before { content: '🌿'; margin-right: 8px; }
         }
     </style>
 </head>
@@ -108,44 +112,63 @@
 
 <div class="container">
     <header>
-        <h1>LỘ TRÌNH CHIẾN LƯỢC 2026 - 2031</h1>
-        <p class="subtitle">Ứng viên: <strong>Nguyễn Văn A</strong> (Thay tên bạn vào đây)</p>
-        <p class="subtitle">Mục tiêu: Software Engineer | Multi-lingual Expert</p>
+        <h1>CHIẾN LƯỢC PHÁT TRIỂN 5 NĂM</h1>
+        <p class="subtitle">Mục tiêu: Software Engineer | Định cư & Sự nghiệp bền vững tại Hoa Kỳ</p>
     </header>
 
     <div class="timeline">
         <div class="milestone">
             <div class="content">
                 <span class="year">2026</span>
-                <h3>Chuẩn bị & Nền tảng</h3>
+                <h3>Chuẩn bị & Chứng thực</h3>
                 <ul>
-                    <li>Hoàn tất chương trình <strong>Aptech</strong> & Chứng chỉ <strong>Java OCP</strong>.</li>
-                    <li>Thi đạt <strong>GED</strong> (Hoa Kỳ) và chứng chỉ <strong>AWS Certified Developer</strong>.</li>
-                    <li>Thẩm định 3 bằng Đại học (UEH & USSH) qua tổ chức <strong>WES</strong>.</li>
+                    <li>Hoàn tất thẩm định 3 bằng Đại học qua <strong>WES</strong>.</li>
+                    <li>Thi đạt chứng chỉ <strong>GED</strong> (tháng 09/2026).</li>
+                    <li>Lấy bằng <strong>Java OCP</strong> & <strong>AWS Certified</strong>.</li>
                 </ul>
             </div>
         </div>
 
         <div class="milestone">
             <div class="content">
-                <span class="year">2027 - 2028</span>
-                <h3>Thích nghi & Nhập học</h3>
+                <span class="year">2027</span>
+                <h3>Nhập cư & Thích nghi</h3>
                 <ul>
-                    <li>Nhập cảnh Mỹ diện <strong>EB3</strong>, ổn định cuộc sống và làm việc tại hãng.</li>
-                    <li>Nộp đơn và bắt đầu học <strong>Master Computer Science</strong> tại <strong>Georgia Tech</strong>.</li>
-                    <li>Xây dựng Networking trong cộng đồng giáo xứ và IT địa phương.</li>
+                    <li>Nhập cảnh Hoa Kỳ (diện EB3), bắt đầu làm việc tại hệ thống cung ứng.</li>
+                    <li>Hoàn tất thủ tục thẻ xanh và số An sinh xã hội (SSN).</li>
                 </ul>
             </div>
         </div>
 
         <div class="milestone">
             <div class="content">
-                <span class="year">2029 - 2030</span>
-                <h3>Tăng tốc & Chuyển đổi</h3>
+                <span class="year">2028</span>
+                <h3>Học thuật & Networking</h3>
                 <ul>
-                    <li>Hoàn tất hợp đồng lao động phổ thông, chuyển sang vị trí <strong>Software Developer</strong> chính thức.</li>
-                    <li>Tận dụng chính sách hoàn học phí của công ty để hoàn tất bằng Thạc sĩ.</li>
-                    <li>Mức lương mục tiêu: <strong>$85,000+</strong>.</li>
+                    <li>Nhập học chương trình <strong>Master of CS</strong> tại <strong>Georgia Tech</strong>.</li>
+                    <li>Tận dụng <strong>FAFSA/Pell Grant</strong> để tối ưu học phí.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="milestone">
+            <div class="content">
+                <span class="year">2029</span>
+                <h3>Chuyển đổi nghề nghiệp</h3>
+                <ul>
+                    <li>Hoàn tất cam kết lao động phổ thông.</li>
+                    <li>Apply vị trí <strong>Software Developer</strong> chính thức tại các tập đoàn.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="milestone">
+            <div class="content">
+                <span class="year">2030</span>
+                <h3>Tăng tốc tài chính</h3>
+                <ul>
+                    <li>Đạt mức lương mục tiêu <strong>$85,000+</strong>.</li>
+                    <li>Tích lũy tài sản và hỗ trợ gia đình ổn định cuộc sống.</li>
                 </ul>
             </div>
         </div>
@@ -153,11 +176,10 @@
         <div class="milestone">
             <div class="content">
                 <span class="year">2031</span>
-                <h3>Thành tựu & An cư</h3>
+                <h3>Thành tựu & Bền vững</h3>
                 <ul>
-                    <li>Tốt nghiệp <strong>Thạc sĩ CNTT</strong> tại Hoa Kỳ.</li>
+                    <li>Tốt nghiệp <strong>Thạc sĩ Công nghệ thông tin</strong>.</li>
                     <li>Khẳng định vị thế Kỹ sư phần mềm chuyên nghiệp.</li>
-                    <li>Ổn định tài sản và hỗ trợ gia đình định cư lâu dài.</li>
                 </ul>
             </div>
         </div>
